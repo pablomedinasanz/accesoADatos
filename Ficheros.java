@@ -15,13 +15,16 @@ public class Ficheros {
 	
 	public static void crearFicheroYEscribir(File file) {
 		
+		
+		
 		try {
-			FileOutputStream archivo = new FileOutputStream("fichero.doc");
-			
+//			 crea un fichero, salvo que exista y sea de solo lectura.
+			FileOutputStream archivo = new FileOutputStream("fichero.doc"); 
+//			texto a escribir
 			String texto = "OLE OLE";
-			
+//			guardamos el String el un array codigo
 			byte codigo[] = texto.getBytes();
-			
+//			se escribe lo guardado en el array
 			archivo.write(codigo);
 			archivo.close();
 			
